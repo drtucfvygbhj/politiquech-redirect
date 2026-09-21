@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politikch</title>
+<!-- politiquech.ch is the fr-language address for Politikch. The site itself
+     lives at politikch.ch; this page forwards there and asks for the interface
+     in fr (?lang=fr, honoured by js/app.js on first load).
+     Search engines: the real page is the canonical one, this one is not indexed. -->
+<link rel="canonical" href="https://politikch.ch/">
+<meta name="robots" content="noindex, follow">
+<meta http-equiv="refresh" content="0; url=https://politikch.ch/?lang=fr">
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0; min-height: 100vh; display: flex; align-items: center;
+         justify-content: center; background: #faf9f6; color: #1a1a1a;
+         font-family: system-ui, -apple-system, "Segoe UI", sans-serif; text-align: center; }
+  @media (prefers-color-scheme: dark) { body { background: #14161a; color: #f2f0ea; } }
+  a { color: #D0021B; }
+  p { font-size: 17px; line-height: 1.5; padding: 0 16px; }
+</style>
+</head>
+<body>
+  <p>Politikch se trouve sur politikch.ch.<br><a href="https://politikch.ch/?lang=fr">Continuer vers politikch.ch</a></p>
+  <script>
+    // Keep any deep link (#/canton/VD …) the visitor arrived with.
+    location.replace('https://politikch.ch/?lang=fr' + (location.hash || ''));
+  </script>
+</body>
+</html>
